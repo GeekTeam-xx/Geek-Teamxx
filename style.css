@@ -1,0 +1,344 @@
+/* Mon code CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+  margin: 0;
+  background-color: #101010;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+img.author-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  border: 3px solid #f3d927;
+  box-shadow: 0 0 10px #f3d927aa;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #f3d927;
+  font-weight: 600;
+  font-size: 2rem;
+}
+  h2 {
+    color: #f3d927;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+  }
+
+form {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+button {
+  background-color: #f3d927;
+  color: #101010;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #ffd700;
+}
+
+p {
+  max-width: 700px;
+  line-height: 1.6;
+  text-align: justify;
+  text-align-last: left;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  margin: 0 auto 1.5rem auto;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+header {
+  background-color: #101010;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f3d927;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: #f3d927;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-whatsapp {
+  background-color: #101010;
+  color: #f3d927;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: 2px solid #f3d927;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: none;
+}
+
+header.navbar {
+  background-color: #101010;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1em 2em;
+}
+
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  color: #f3d927;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  text-align: center;
+  padding: 2em;
+}
+
+.hero-img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 0.8em 1.6em;
+  background-color: #101010;
+  color: #f3d927;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 2px solid #f3d927;
+  transition: all 0.3s;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #f3d927;
+  color: #101010;
+}
+
+.resume {
+  max-width: 800px;
+  margin: 3em auto;
+  padding: 0 1em;
+}
+
+.resume h1 {
+  font-size: 2em;
+  text-align: center;
+  color: #f3d927;
+  margin-bottom: 1em;
+}
+
+.resume p {
+  text-align: justify;
+  text-align-last: left;
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+.extrait-livre {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  background-color: #101010;
+}
+
+.extrait-livre h2 {
+  color: #f3d927;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.galerie {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.galerie img {
+  height: 300px;
+  user-select: none;
+  -webkit-user-drag: none;
+  cursor: default;
+  border: 2px solid #f3d927;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.resume-extrait {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.resume-extrait p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.resume-extrait strong {
+  color: #f3d927;
+  font-weight: 600;
+}
+
+.conclusion-text {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.infos-livre {
+  margin-top: 1rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 2em 0;
+  background-color: #101010;
+  color: #aaa;
+  font-size: 0.9em;
+}
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  header ul {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+}
