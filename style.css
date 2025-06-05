@@ -172,11 +172,15 @@ p {
 
 header.navbar {
   background-color: #101010;
-  position: sticky;
-  top: 0;
+  /*position: sticky; */
   z-index: 1000;
   padding: 1em 2em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
+
 
 
 header ul {
@@ -197,6 +201,8 @@ header a {
 .hero {
   text-align: center;
   padding: 2em;
+  background-color:#f3d927;
+  
 }
 
 .hero-img {
@@ -278,6 +284,7 @@ header a {
 }
 
 .resume-extrait {
+  padding-top: 20px;
   max-width: 800px;
   margin: 0 auto;
   text-align: justify;

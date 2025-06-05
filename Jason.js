@@ -20,3 +20,4 @@ document.addEventListener('DOMContentLoaded', function () {
     window.open(lien, '_blank');
   }
   
+  

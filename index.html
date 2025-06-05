@@ -15,8 +15,8 @@
 
   <!-- Barre de navigation ( NavBar)-->
 
-  <header class="navbar">
-    <nav>
+  <header >
+    <nav class="navbar">
       <ul>
         <li><a href="index.html">ACCUEIL</a></li>
         <li><a href="#extrait">LE LIVRE</a></li>
@@ -55,13 +55,17 @@
         class="protected-img" />
       <img src="https://i.postimg.cc/qM9jcGzj/EXTRAIT-ROMAN-ESPRIT-DE-RESILIENCE-3.png" alt="Extrait page 3"
         class="protected-img" />
-      <img src="https://i.postimg.cc/Bn0w9g4t/EXTRAIT-ROMAN-ESPRIT-DE-RESILIENCE-4.png" alt="Extrait page 4"
+    </div>
+    <section id="idextrait" class="extrait-livre">
+      <div class="galerie">
+          <img src="https://i.postimg.cc/Bn0w9g4t/EXTRAIT-ROMAN-ESPRIT-DE-RESILIENCE-4.png" alt="Extrait page 4"
         class="protected-img" />
       <img src="https://i.postimg.cc/4ycwjK0z/EXTRAIT-ROMAN-ESPRIT-DE-RESILIENCE-5.png" alt="Extrait page 5"
         class="protected-img" />
       <img src="https://i.postimg.cc/MTMYjMqh/EXTRAIT-ROMAN-ESPRIT-DE-RESILIENCE-6.png" alt="Extrait page 6"
         class="protected-img" />
-    </div>
+      </div>
+    </section>
 
     <div class="resume-extrait">
       <p><strong>Un témoignage intime et universel</strong><br />
@@ -81,13 +85,14 @@
         renaît autrement, à travers les souvenirs, les valeurs et la voix qui continue d’inspirer. L’Esprit de
         Résilience est un message d’espoir universel un appel à se relever, à réapprendre à vivre, même au plus profond
         de l’effondrement.</p>
-    </div>
 
-    <p class="conclusion-text">
+    <p class="">
       Merci de votre intérêt pour <em>L'Esprit de Résilience</em>. Ce voyage intime et universel continue à toucher le
       cœur de nombreux lecteurs. Nous espérons que cette œuvre vous accompagnera dans vos propres moments de réflexion
       et de renouveau.
     </p>
+    </div>
+
 
     <p class="infos-livre">
       <strong>Genre :</strong> Récit jeunesse &nbsp;&nbsp;&nbsp; <strong>Pages :</strong> 73 &nbsp;&nbsp;&nbsp;
@@ -199,12 +204,24 @@
     <p>&copy;Copyright © Design by CODEV Agence 2025.All Rights Reserved</p>
   </footer>
 
-</body>
-<script>
-  document.querySelectorAll('.protected-img').forEach(img => {
-    img.addEventListener('contextmenu', e => e.preventDefault());
+ 
+<script type="text/javascript">
+  var lastscrollTop = 0;
+  navbar=document.getElementByid("navbar");
+  window.addEventListener("scroll", function () {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastscrollTop) {
+      navbar.style.top="-80px";
+    } else {
+      navbar.style.top="0";
+    }
+    lastscrollTop = scrollTop;
   });
+
 </script>
+
+</body>
+
 
 
 </html>
