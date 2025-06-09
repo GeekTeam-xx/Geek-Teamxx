@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="Jason.jssx">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./javaScript/Jason.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <title>L'Esprit de Résilience</title>
 </head>
 
 <body>
-
-  <!-- Barre de navigation ( NavBar)-->
-
-  <header >
-    <nav class="navbar">
+   
+ <!-- Barre de navigation ( NavBar)-->
+  
+  <header>
+    <nav class="navbar" id="navbar">
       <ul>
         <li><a href="index.html">ACCUEIL</a></li>
         <li><a href="#extrait">LE LIVRE</a></li>
@@ -26,7 +26,19 @@
         <li><a href="#temoignages">TEMOIGNAGES</a></li>
         <li><a href="#contact">CONTACTEZ-NOUS</a></li>
       </ul>
+      <button class="toggle-sidebar">☰</button> <!-- Bouton pour afficher la sidebar -->
     </nav>
+  </header>
+  <div class="sidebar">
+    <ul>
+      <li><a href="#extrait">LE LIVRE</a></li>
+      <li><a href="#auteur">L'AUTEUR</a></li>
+      <li><a href="#contexte">CONTEXTE HISTORIQUE</a></li>
+      <li><a href="#commander">COMMANDER</a></li>
+      <li><a href="#temoignages">TEMOIGNAGES</a></li>
+      <li><a href="#contact">CONTACTEZ-NOUS</a></li>
+    </ul>
+  </div>
   </header>
   <main class="accueil">
     <section class="hero">
@@ -203,22 +215,27 @@
   <footer>
     <p>&copy;Copyright © Design by CODEV Agence 2025.All Rights Reserved</p>
   </footer>
-
- 
-<script type="text/javascript">
-  var lastscrollTop = 0;
-  navbar=document.getElementByid("navbar");
-  window.addEventListener("scroll", function () {
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastscrollTop) {
-      navbar.style.top="-80px";
-    } else {
-      navbar.style.top="0";
-    }
-    lastscrollTop = scrollTop;
-  });
-
-</script>
+  <script type="text/javascript">
+    var lastScrollTop = 0; // Variable pour stocker la dernière position de défilement
+    var navbar = document.getElementById("navbar"); // Récupère la barre de navigation
+    var sidebar = document.querySelector('.sidebar'); // Récupère la sidebar
+    var toggleButton = document.querySelector('.toggle-sidebar'); // Récupère le bouton de la sidebar
+    window.addEventListener("scroll", function() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop; // Position actuelle de défilement
+      if (scrollTop > lastScrollTop) {
+        // Si on défile vers le bas
+        navbar.style.top = "-80px"; // Masque la barre de navigation
+      } else {
+        // Si on défile vers le haut
+        navbar.style.top = "0"; // Affiche la barre de navigation
+      }
+      lastScrollTop = scrollTop; // Met à jour la dernière position de défilement
+    });
+    toggleButton.addEventListener('click', function() {
+      sidebar.classList.toggle('active'); // Bascule la classe active sur la sidebar
+    });
+  </script>
+   
 
 </body>
 
